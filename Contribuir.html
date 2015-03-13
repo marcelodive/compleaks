@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Compleaks 2.0 - Contribuir</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Marcelo Pereira Rodrigues" />
+    <!-- Bootstratp --> 
+    <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.2.0-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="Standards/standards.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Cabeçalho -->    
+    <div class="container">
+      <a style="color: inherit;" href="index.html"><h1 style="margin-top: 10px; text-align: center;">Compleaks 2.0<sup><sup><sub>beta</sub></sup></sup></h1></a>
+    </div>
+    
+    <div class="container well">
+      <form action="Upload.php" method="post" enctype="multipart/form-data" name="Formulario" onsubmit="$('#loading').show();">
+        <p style="margin-top: 10px;"><strong>Disciplina</strong>:</p>  
+        <select name="disciplina" class="form-control" required>
+            <option value="" selected>Escolha uma Disciplina (*Obrigatório)</option>
+            <option value="Administração (CAD011)">Administração (CAD011)</option>
+            <option value="Administração de Custos (CAD153)">Administração de Custos (CAD153)</option>
+            <option value="Administração Financeira (CAD167)">Administração Financeira (CAD167)</option>
+            <option value="Administração Mercadológica (CAD164)">Administração Mercadológica (CAD164)</option>
+            <option value="Administração da Produção (CAD004)">Administração da Produção (CAD004)</option>
+            <option value="Administração de Recursos Humanos (CAD163)">Administração de Recursos Humanos (CAD163)</option>
+            <option value="Álgebra A (MAT034)">Álgebra A (MAT034)</option>
+            <option value="Algoritmos e Estruturas de Dados 1 (DCC003)">Algoritmos e Estruturas de Dados 1 (DCC003)</option>
+            <option value="Algoritmos e Estruturas de Dados 2 (DCC004)">Algoritmos e Estruturas de Dados 2 (DCC004)</option>
+            <option value="Algoritmos e Estruturas de Dados 3 (DCC005)">Algoritmos e Estruturas de Dados 3 (DCC005)</option>
+            <option value="Análise Numérica (DCC033)">Análise Numérica (DCC033)</option>
+            <option value="Cálculo Diferencial e Integral 1 (MAT001)">Cálculo Diferencial e Integral 1 (MAT001)</option>
+            <option value="Cálculo Diferencial e Integral 2 (MAT002)">Cálculo Diferencial e Integral 2 (MAT002)</option>
+            <option value="Cálculo Diferencial e Integral 3 (MAT003)">Cálculo Diferencial e Integral 3 (MAT003)</option>
+            <option value="Cálculo de Várias Variáveis (MAT042)">Cálculo de Várias Variáveis (MAT042)</option>
+            <option value="Cálculo Financeiro e Custos (CIC001)">Cálculo Financeiro e Custos (CIC001)</option>
+            <option value="Compiladores 1 (DCC053)">Compiladores 1 (DCC053)</option>
+            <option value="Computadores e Sociedade (DCC606)">Computadores e Sociedade (DCC606)</option>
+            <option value="Economia A 1 (ECN101)">Economia A 1 (ECN101)</option>
+            <option value="Engenharia de Software (DCC603)">Engenharia de Software (DCC603)</option>
+            <option value="Equações Diferenciais C (MAT040)">Equações Diferenciais C (MAT040)</option>
+          <option value="Fundamentos da Teoria da Computação (DCC129)">Fundamentos da Teoria da Computação (DCC129)</option>
+          <option value="Fundamentos de Eletromagnetismo (FIS069)">Fundamentos de Eletromagnetismo (FIS069)</option>
+            <option value="Fundamentos de Mecânica (FIS065)">Fundamentos de Mecânica (FIS065)</option>
+            <option value="Fundamentos de Sistemas de Informação (DCC044)">Fundamentos de Sistemas de Informação (DCC044)</option>
+            <option value="Estatística e Probabilidades (EST031)">Estatística e Probabilidades (EST031)</option>
+            <option value="Geometria Analítica e Algebra Linear (MAT038)">Geometria Analítica e Algebra Linear (MAT038)</option>
+            <option value="Introdução a Banco de Dados (DCC011)">Introdução a Banco de Dados (DCC011)</option>
+          <option value="Introdução à Física Experimental (FIS054)">Introdução à Física Experimental (FIS054)</option>
+            <option value="Introdução à Contabilidade (CIC010)">Introdução à Contabilidade (CIC010)</option>
+            <option value="Introdução à Economia (ECN140)">Introdução à Economia (ECN140)</option>
+            <option value="Introdução aos Sistemas Lógicos (DCC114)">Introdução aos Sistemas Lógicos (DCC114)</option>
+            <option value="Linguagens de Programação (DCC024)">Linguagens de Programação (DCC024)</option>
+            <option value="Matemática Discreta (DCC111)">Matemática Discreta (DCC111)</option>
+            <option value="Oficina de Língua Portuguesa: leitura e produção de textos (LET200)">Oficina de Língua Portuguesa: leitura e produção de textos (LET200)</option>
+            <option value="Organização de Computadores 1 (DCC006)">Organização de Computadores 1 (DCC006)</option>
+            <option value="Organização de Computadores 2 (DCC007)">Organização de Computadores 2 (DCC007)</option>
+            <option value="Organização e Tratamento da Informação (OTI071)">Organização e Tratamento da Informação (OTI071)</option>
+            <option value="Pesquisa Operacional (DCC035)">Pesquisa Operacional (DCC035)</option>
+            <option value="Probabilidade (EST032)">Probabilidade (EST032)</option>
+            <option value="Programação Modular (DCC052)">Programação Modular (DCC052)</option>
+            <option value="Projeto Orientado em Computação 1 (DCC604)">Projeto Orientado em Computação 1 (DCC604)</option>
+            <option value="Projeto Orientado em Computação 2 (DCC604)">Projeto Orientado em Computação 2 (DCC009)</option>
+            <option value="Redes de Computadores (DCC023)">Redes de Computadores (DCC023)</option>
+            <option value="Sistemas Operacionais (DCC605)">Sistemas Operacionais (DCC605)</option>
+            <option value="Software Básico (DCC008)">Software Básico (DCC008)</option>
+            <option value="Teoria e Prática de Sistemas de Informação (DCC185)">Teoria e Prática de Sistemas de Informação (DCC185)</option>
+      <option value="Teoria Geral da Administração (CAD103)">Teoria Geral da Administração (CAD103)</option>
+      <option value="The Zueira Never Ends (ZNE500)">The Zueira Never Ends (ZNE500)</option>
+        </select>
+        
+        <p style="margin-top: 10px;"><strong>Ano</strong>:</p>  
+        <select name="ano" class="form-control" required>
+          <option value="" selected>Escolha um Ano (*Obrigatório)</option>
+          <option value="Anterior a 2010">Anterior a 2010</option>
+          <option value="2010">2010</option>
+          <option value="2011">2011</option>
+          <option value="2012">2012</option>
+          <option value="2013">2013</option>
+          <option value="2014">2014</option>
+        </select>
+        
+        <p style="margin-top: 10px;"><strong>Semestre</strong>:</p>  
+        <select name="semestre" class="form-control" required>
+          <option value="" selected>Escolha um Semestre (*Obrigatório)</option>
+          <option value="1">1º</option>
+          <option value="2">2º</option>
+        </select>
+        
+        <p style="margin-top: 10px;"><strong>Tipo de Arquivo</strong>:</p>  
+        <select name="tipologia" class="form-control" required>
+          <option value="" selected>Escolha um Tipo de Arquivo (*Obrigatório)</option>
+          <option value="Apostila">Apostila</option>
+          <option value="Apresentação/Slides">Apresentação/Slides</option>
+          <option value="Lista de exercício">Lista de Exercícios</option>
+          <option value="Prova">Prova</option>
+          <option value="Trabalho">Trabalho</option>
+          <option value="Outros">Outros</option>
+        </select>      
+        
+        <p style="margin-top: 10px;"><strong>Professor</strong>:</p>  
+        <input name="professor" type="text" class="form-control" placeholder="Nome do Professor (*Obrigatório)" required>
+        
+        <p style="margin-top: 10px;"><strong>Outras Informações</strong>:</p>  
+        <input name="informacoes" type="text" class="form-control"
+        placeholder="Informações Relevantes (*Obrigatório)" required>
+        
+        <p style="margin-top: 10px;"><strong>Selecione o Arquivo</strong>
+          (apenas PDF ou imagens com no máximo <strong>10mb</strong>):</p>
+        <input name="userfile[]" multiple="multiple" class="btn bg-info" type="file" accept="image/*,application/pdf" required>
+        
+        <div id="loading" style="display:none; text-align: center;">
+        <img style="margin:10px;" src="http://goo.gl/YuQoZV" alt="Carregando"><p class="bg-warning">
+        Enviando...<br>Dependendo do tamanho do arquivo, este processo pode demorar alguns minutos.<br>
+          Pelo Google Chrome é possível visualizar o progresso do Download.</p></div>
+        
+        <div style="text-align: center; margin-top: 25px;">
+          <input name="upload" type="submit" class="btn btn-success btn-lg" value="Enviar">
+        </div>
+        
+    </form>
+    </div>
+
+    <!-- Scripts: -->
+    <!-- Bootstrap -->
+    <script>
+      function validateForm() {
+          var x = document.forms.value;
+          if (x==null || x=="" || x=="X") {
+              return false;
+          }
+      }
+    </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+      <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>  
+  </body>
+</html>
+
